@@ -1,0 +1,7 @@
+UCB1 with reward normalization to [0,1].
+
+Justification: rewards are stationary, non-negative, and bounded (r = U[0,1] * Binomial(n,p), max n = 8), so UCB1’s assumptions hold. Histograms show heavy mass at 0 and right-tails with means roughly: arm2 ≈ 0.90 ≥ arm0 ≈ 0.83 ≫ arm1 ≈ 0.61; UCB1’s optimism term should identify the best arm quickly.
+
+Rejected: Thompson(Beta) is mismatched (rewards are not Bernoulli), and collapsing to 0/1 would discard magnitude information. ε-greedy needs a tuned ε and typically has higher regret than UCB1 here.
+
+Implementation note: divide observed rewards by c = 8 before updating UCB1 to satisfy the [0,1] bound.

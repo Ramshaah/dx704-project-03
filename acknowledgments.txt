@@ -1,0 +1,18 @@
+Acknowledgments
+==========================
+
+People & Discussions
+- None
+
+Data & Provided Code
+- BanditProblem class from the Week 3 project template (dx704-project-03).
+
+External Libraries
+- numpy: random number generation, arrays, basic math.
+- pandas: tabular data handling and TSV writing.
+- matplotlib (optional): quick histograms/diagnostics in Part 1.
+
+Generative AI Usage
+- I used ChatGPT (GPT-5 Thinking) to help draft/refine code and comments for Parts 1–4.
+- I reviewed all outputs and made final methodological choices.
+
